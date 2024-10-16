@@ -26,5 +26,5 @@ dependencies {
     implementation deps.glide
     implementation deps.materialPrefs
 
-    implementation project(':library')
+    implementation project(':discrete-scrollview')
 }
