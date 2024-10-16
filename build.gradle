@@ -1,25 +1,20 @@
 buildscript {
     repositories {
-        maven { url "https://nexus.web.cern.ch/nexus/content/repositories/public/" }
-        maven { url "https://maven.google.com" }
-        maven { url "https://jitpack.io" }
-        maven { url "https://plugins.gradle.org/m2/" }
         google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.1.0'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.5'
     }
 }
 
 allprojects {
     repositories {
-        maven { url "https://maven.google.com" }
-        maven { url "https://jitpack.io" }
-        maven { url "https://plugins.gradle.org/m2/" }
-        maven { url "https://repo1.maven.org/maven2/" }
-        maven { url "https://maven.scijava.org/content/repositories/public/" }
         google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.scijava.org/content/repositories/public/" }
     }
 }
 
