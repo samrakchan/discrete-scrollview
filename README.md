@@ -187,6 +187,14 @@ public interface OnItemChangedListener<T extends ViewHolder> {
 }
 ```
 
+## Custom version from 1.5.1
+- Support AGP 8
+- Handle failed resolve by using my implementation
+
+ ```
+ implementation 'com.github.youssefshaaban:discrete-scrollview:1.0.0'
+```
+
 ## Special thanks
 Thanks to [Tayisiya Yurkiv](https://www.behance.net/yurkivt) for sample app design and beautiful GIFs.
 
