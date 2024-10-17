@@ -1,11 +1,11 @@
 apply plugin: 'maven-publish'
 
 def upload = [
-        user       : 'yarolegovich',
+        user       : 'youssefshaaban',
         artifactId : 'discrete-scrollview',
-        userOrg    : 'yarolegovich',
+        userOrg    : 'youssefshaaban',
         repository : 'maven',
-        groupId    : 'com.yarolegovich',
+        groupId    : 'com.youssefshaaban',
         uploadName : 'DiscreteScrollView',
         description: 'A scrollable list of items that centers the current element and provides easy-to-use APIs for cool item animations.',
         version    : '1.0.0',
@@ -34,26 +34,4 @@ afterEvaluate {
             }
         }
     }
-
-    Properties localProps = new Properties()
-    localProps.load(project.rootProject.file('local.properties').newDataInputStream())
-
-//    bintray {
-//        user = upload.user
-//        key = localProps.getProperty('bintray.api_key')
-//        publications = ['LibRelease']
-//        configurations = ['archives']
-//        pkg {
-//            name = upload.uploadName
-//            repo = upload.repository
-//            userOrg = upload.userOrg
-//            licenses = upload.licences
-//            publish = true
-//            dryRun = false
-//            version {
-//                name = upload.version
-//                desc = upload.description
-//            }
-//        }
-//    }
 }
