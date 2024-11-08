@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
     namespace 'com.yarolegovich.discretescrollview'
@@ -16,6 +17,16 @@ android {
     compileOptions{
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.github.samrakchan'
+            artifactId = 'discrete-scrollview'
+            version = '1.0.3'
+        }
     }
 }
 
