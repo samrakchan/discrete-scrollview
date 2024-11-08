@@ -1,1 +1,4 @@
-include ':sample', ':discrete-scrollview'
+if (!gradle.startParameter.projectProperties.containsKey("jitpack")) {
+    include(":sample")
+}
+include(":discrete-scrollview")
