@@ -23,9 +23,11 @@ android {
 publishing {
     publications {
         release(MavenPublication) {
+            from components.findByName('release')
+
             groupId = 'com.github.samrakchan'
             artifactId = 'discrete-scrollview'
-            version = '1.0.3'
+            version = '1.0.4'
         }
     }
 }
@@ -34,15 +36,5 @@ dependencies {
     implementation deps.recycler
     implementation deps.annotations
 
-    testImplementation testDeps.robolectric
-    testImplementation testDeps.jUnit
-    testImplementation testDeps.mockito
-    testImplementation testDeps.hamcrest
-
     debugImplementation deps.androidxCompat
-    androidTestImplementation testDeps.espresso
-    androidTestImplementation testDeps.androidJUnit
-    androidTestImplementation testDeps.testRunner
-    androidTestImplementation testDeps.testRules
-    androidTestImplementation testDeps.hamcrest
 }

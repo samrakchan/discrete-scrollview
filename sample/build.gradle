@@ -1,8 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion rootProject.compileSdkVersion
-    buildToolsVersion rootProject.buildToolsVersion
+    compileSdk rootProject.compileSdkVersion
     namespace 'com.yarolegovich.discretescrollview.sample'
     defaultConfig {
         applicationId "com.yarolegovich.discretescrollview.sample"
