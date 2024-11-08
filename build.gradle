@@ -23,9 +23,9 @@ task clean(type: Delete) {
 }
 
 ext {
-    compileSdkVersion = 29
-    buildToolsVersion = '29.0.2'
-    targetSdkVersion = 29
+    compileSdkVersion = 33
+    buildToolsVersion = '33.0.1'
+    targetSdkVersion = 33
 
     deps = [
             recycler      : 'androidx.recyclerview:recyclerview:1.0.0',
